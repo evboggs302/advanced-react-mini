@@ -10,27 +10,13 @@ import Parent from './components/Children/Parent';
 export default <Switch>
     {/* Presentational */}
     <Route
-        path='/pokemon-presentational'
-        component={PokemonContainer}
-    />
+        path='/pokemon-presentational'/>
     {/* HOC */}
     <Route
-        path='/pokemon'
-        component={Pokemon}
-    />
+        path='/pokemon'/>
     {/* Render Props */}
     <Route
-        path='/pokemon-renderprops'
-        render={() => {
-            return (
-                <DataFetcher 
-                url='https://api.pokemontcg.io/v1/cards?setCode=base1'
-                render={(data) => {
-                    return <PokemonRender data={data} />
-                }}
-                />
-            )
-        }} />
+        path='/pokemon-renderprops'/>
     {/* Children */}
-    <Route path='/children' component={Parent} />
+    <Route path='/children'/>
 </Switch>
