@@ -4,9 +4,9 @@ import myHOC from './myHOC';
 class Pokemon extends Component {
 	render() {
 		const characterList = this.props.data.map(pokemon => {
-			return <div>
+			return <div key={pokemon.id}>
 			<p>{pokemon.name}</p>
-			<img src={pokemon.imageUrl} />
+			<img src={pokemon.imageUrl} alt='pokemon'/>
 			</div>
 		})
 		return <div>{characterList}</div>;

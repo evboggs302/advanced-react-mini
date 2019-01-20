@@ -12,7 +12,6 @@ function myHOC(Component, url) {
 
         getData = () => {
             axios.get(url).then((HOCdata) => {
-                console.log(HOCdata.data)
                 this.setState({
                     data: HOCdata.data.cards
                 })
