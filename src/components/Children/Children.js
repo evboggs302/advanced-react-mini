@@ -2,11 +2,11 @@ import React, { Component } from "react";
 
 class Children extends Component {
 	state = {
-		testData: ''
+		testData: 'Hello Friends'
 	}
 	render() {
 		return <div>
-		{}
+		{this.state.testData}
 		</div>
 	}
 }
