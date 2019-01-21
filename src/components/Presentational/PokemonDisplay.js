@@ -3,14 +3,7 @@ import '../../App.css';
 
 class PokemonDisplay extends Component {
 	render() {
-		const pokeList = this.props.pokemon.map(pokemon => {
-			return <div key={pokemon.id}>
-				<p>{pokemon.name}</p>
-				<img src={pokemon.imageUrl} alt='pokemon'/>
-			</div>
-		})
-
-		return <div>{pokeList}</div>
+		return <div></div>
 	}
 }
 export default PokemonDisplay;

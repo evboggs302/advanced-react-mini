@@ -10,10 +10,10 @@ import Parent from './components/Children/Parent';
 export default <Switch>
     {/* Presentational */}
     <Route
-        path='/pokemon-presentational'/>
+        path='/'/>
     {/* HOC */}
     <Route
-        path='/pokemon'/>
+        path='/pokemon-hoc'/>
     {/* Render Props */}
     <Route
         path='/pokemon-renderprops'/>
