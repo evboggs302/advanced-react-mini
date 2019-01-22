@@ -4,8 +4,10 @@ class PokemonDisplay extends Component {
 	render() {
 		const pokeList = this.props.pokemon.map(pokemon => {
 			return <div className='pokemon-display' key={pokemon.id}>
-				<p>{pokemon.name}</p>
-				<img src={pokemon.imageUrl} alt='pokemon'/>
+				<div>{pokemon.name}</div>
+				<div>
+					<img src={pokemon.imageUrl} alt='pokemon'/>
+				</div>
 			</div>
 		})
 

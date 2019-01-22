@@ -11,22 +11,29 @@ class Header extends Component {
                 
                 {/* Presentational */}
                 <div>
-                    <NavLink to="/" activeStyle={{ fontWeight: "bold", color: "red"}}>
+                    <NavLink to="/" activeStyle={{ fontWeight: "bold", color: "pink"}}>
                         Pokemon Presentational
                     </NavLink>
                 </div>
 
                 {/* HOC */}
                 <div>
-                    <NavLink to="/pokemon-hoc" activeStyle={{ fontWeight: "bold", color: "red"}}>
+                    <NavLink to="/pokemon-hoc" activeStyle={{ fontWeight: "bold", color: "green"}}>
                         Pokemon HOC
                     </NavLink>
                 </div>
 
                 {/* Render Props */}
                 <div>
-                    <NavLink to="/pokemon-renderprops" activeStyle={{ fontWeight: "bold", color: "red"}}>
+                    <NavLink to="/pokemon-renderprops" activeStyle={{ fontWeight: "bold", color: "yellow"}}>
                         Pokemon Render Props
+                    </NavLink>
+                </div>
+
+                {/* Children */}
+                <div>
+                    <NavLink to="/children" activeStyle={{ fontWeight: "bold", color: "gray"}}>
+                        Children
                     </NavLink>
                 </div>
             </div>

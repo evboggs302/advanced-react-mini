@@ -4,7 +4,7 @@ class CarsListRender extends Component {
 	render() {
 		const pokeList = this.props.data.map(pokemon => {
 			return <div className='pokemon-display' key={pokemon.id}>
-				<p>{pokemon.name}</p>
+				<div>{pokemon.name}</div>
 				<img src={pokemon.imageUrl} alt='pokemon'/>
 			</div>
 		})
