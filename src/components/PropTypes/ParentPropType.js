@@ -5,7 +5,7 @@ class ParentPropType extends Component {
     render(){
         return (
         <div>
-            <PropTypes />
+            <PropTypes name={['Sean']} />
         </div>
         )
     }
