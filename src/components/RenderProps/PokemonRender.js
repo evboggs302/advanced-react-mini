@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-class CarsListRender extends Component {
+class PokemonRender extends Component {
 	render() {
 		const pokeList = this.props.data.map(pokemon => {
 			return <div className='pokemon-display' key={pokemon.id}>
@@ -14,4 +14,4 @@ class CarsListRender extends Component {
 	}
 }
 
-export default CarsListRender;
+export default PokemonRender;
