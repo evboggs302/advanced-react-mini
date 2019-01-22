@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import myHOC from './myHOC';
 
-function Pokemon() {
-		const characterList = this.props.data.map(pokemon => {
+function Pokemon(props) {
+		const characterList = props.data.map(pokemon => {
 			return <div className='pokemon-display' key={pokemon.id}>
 			<div>{pokemon.name}</div>
 			<img src={pokemon.imageUrl} alt='pokemon'/>
