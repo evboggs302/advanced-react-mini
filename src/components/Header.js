@@ -32,8 +32,8 @@ class Header extends Component {
 
                 {/* Children */}
                 <div>
-                    <NavLink to="/children" activeStyle={{ fontWeight: "bold", color: "gray"}}>
-                        Children
+                    <NavLink to="/prop-types" activeStyle={{ fontWeight: "bold", color: "gray"}}>
+                        Prop Types Example
                     </NavLink>
                 </div>
             </div>

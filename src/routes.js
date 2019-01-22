@@ -5,7 +5,7 @@ import PokemonContainer from './components/Presentational/PokemonContainer';
 import Pokemon from './components/HOC/Pokemon';
 import DataFetcher from './components/RenderProps/DataFetcher';
 import PokemonRender from './components/RenderProps/PokemonRender';
-import Parent from './components/Children/Parent';
+import PropTypes from './components/PropTypes/ParentPropType';
 
 export default <Switch>
     {/* Presentational */}
@@ -31,6 +31,6 @@ export default <Switch>
                 />
             )
         }} />
-    {/* Children */}
-    <Route path='/children' component={Parent} />
+    {/* Prop-Types */}
+    <Route path='/prop-types' component={PropTypes} />
 </Switch>
