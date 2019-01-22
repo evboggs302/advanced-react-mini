@@ -15,8 +15,9 @@ function myHOC(Component, url) {
                 this.setState({
                     data: HOCdata.data.cards
                 })
-            }).catch(error => console.log(error))
+            })
         }
+        
         render(){
             return(
                 <div>
