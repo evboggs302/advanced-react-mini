@@ -31,6 +31,13 @@ class Header extends Component {
                         Pokemon Render Props
                     </NavLink>
                 </div>
+
+                {/* Children */}
+                <div>
+                    <NavLink to="/children" activeStyle={{ fontWeight: "bold", color: "gray"}}>
+                        Children
+                    </NavLink>
+                </div>
             </div>
         </div>
     )
