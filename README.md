@@ -1,9 +1,8 @@
 # Advanced React
 
-#### Topics:
+## Topics:
 
-•Props Children
-
+### Reusable Components
 •HOC
 
 •Render Props
