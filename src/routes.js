@@ -10,13 +10,20 @@ import PropTypes from './components/PropTypes/ParentPropType';
 export default <Switch>
     {/* Presentational */}
     <Route
-        exact path='/' component={PokemonContainer}/>
+        exact path='/'
+        // component={PokemonContainer}
+        />
     {/* HOC */}
     <Route
-        path='/pokemon-hoc' component={Pokemon}/>
+        path='/pokemon-hoc'
+        // component={Pokemon}
+        />
     {/* Render Props */}
     <Route
-        path='/pokemon-renderprops'/>
+        path='/pokemon-renderprops'
+        />
     {/* PropTypes */}
-    <Route path='/prop-types' component={PropTypes}/>
+    <Route path='/prop-types'
+    // component={PropTypes}
+        />
 </Switch>
