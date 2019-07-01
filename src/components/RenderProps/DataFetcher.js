@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import axios from "axios";
 
 class DataFetcher extends Component {
   constructor(props) {
@@ -7,8 +8,22 @@ class DataFetcher extends Component {
       pokemon: null
     };
   }
+  fetchData = () => {
+    axios.get(this.props.url).then(response => {
+      this.setState({
+        pokemon: response.data.cards
+      });
+    });
+  };
+
   render() {
-    return <div />;
+    return (
+      <div>
+        {this.state.pokemon
+          ? this.props.renderPokemon(this.state.pokemon)
+          : this.fetchData()}
+      </div>
+    );
   }
 }
 

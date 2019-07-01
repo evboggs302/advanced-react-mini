@@ -14,7 +14,19 @@ export default (
     {/* HOC */}
     <Route path="/pokemon-hoc" component={Pokemon} />
     {/* Render Props */}
-    <Route path="/pokemon-renderprops" />
+    <Route
+      path="/pokemon-renderprops"
+      render={() => {
+        return (
+          <DataFetcher
+            url="https://api.pokemontcg.io/v1/cards?setCode=base1"
+            renderPokemon={data => {
+              return <PokemonRender pokemon={data} />;
+            }}
+          />
+        );
+      }}
+    />
     {/* PropTypes */}
     <Route path="/prop-types" component={PropTypesExample} />
   </Switch>
